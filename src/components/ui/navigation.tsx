@@ -4,9 +4,9 @@ const Navigation = () => {
   return (
     <nav className="flex items-center justify-between p-6 bg-navy-deep/90 backdrop-blur-sm border-b border-orange-vibrant/20">
       <div className="flex items-center gap-2">
-        <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-          {/* <span className="text-primary-foreground font-bold text-lg">S</span> */}
-        </div>
+        {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+          <span className="text-primary-foreground font-bold text-lg">S</span>
+        </div> */}
         <span className="text-foreground font-bold text-xl">Strydo</span>
       </div>
       
