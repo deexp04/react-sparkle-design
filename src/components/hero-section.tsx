@@ -8,7 +8,7 @@ const HeroSection = () => {
       <SunburstBackground />
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="mb-8">
+        <div className="mb-8 mt-16">
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
             Unleash Your Content Momentum
           </h1>
@@ -21,12 +21,29 @@ const HeroSection = () => {
           </Button>
         </div>
         
-        <div className="relative mt-16">
-          <img 
-            src={robotMascot} 
-            alt="Strydo AI Robot Mascot" 
-            className="w-64 h-64 mx-auto object-contain animate-pulse-glow"
-          />
+        {/* Floating Robot with unique animations */}
+        <div className="relative mt-20 flex justify-center">
+          <div className="relative">
+            {/* Floating animation container */}
+            <div className="animate-bounce">
+              <img 
+                src={robotMascot} 
+                alt="Strydo AI Robot Mascot" 
+                className="w-72 h-72 object-contain animate-pulse-glow hover:scale-110 transition-transform duration-500 ease-out filter drop-shadow-2xl"
+                style={{
+                  animation: 'bounce 3s ease-in-out infinite, pulse-glow 2s ease-in-out infinite'
+                }}
+              />
+            </div>
+            
+            {/* Orbiting elements for extra motion */}
+            <div className="absolute -top-4 -right-4 w-6 h-6 bg-primary rounded-full animate-spin-slow opacity-80"></div>
+            <div className="absolute -bottom-2 -left-6 w-4 h-4 bg-amber-glow rounded-full animate-ping delay-1000 opacity-60"></div>
+            <div className="absolute top-1/2 -right-8 w-3 h-3 bg-secondary rounded-full animate-bounce delay-500 opacity-70"></div>
+            
+            {/* Glowing base effect */}
+            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-48 h-8 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
+          </div>
         </div>
       </div>
       
