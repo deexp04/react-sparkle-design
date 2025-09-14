@@ -57,6 +57,32 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Strydo theme colors
+        orange: {
+          vibrant: "hsl(var(--orange-vibrant))",
+          light: "hsl(var(--orange-light))",
+          dark: "hsl(var(--orange-dark))",
+        },
+        amber: {
+          glow: "hsl(var(--amber-glow))",
+        },
+        brown: {
+          warm: "hsl(var(--brown-warm))",
+        },
+        navy: {
+          deep: "hsl(var(--navy-deep))",
+          card: "hsl(var(--navy-card))",
+        },
+      },
+      backgroundImage: {
+        'gradient-sunburst': 'var(--gradient-sunburst)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-card': 'var(--gradient-card)',
+      },
+      boxShadow: {
+        'glow': 'var(--shadow-glow)',
+        'card': 'var(--shadow-card)',
+        'button': 'var(--shadow-button)',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +110,8 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'spin-slow': 'spin 20s linear infinite',
+        'pulse-glow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },
