@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Never miss a post again
+            Unleash Your Content Momentum
           </h1>
           <p className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto">
             Strydo is the AI co-pilot that helps creators generate consistent, 
